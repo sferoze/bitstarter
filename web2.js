@@ -10,9 +10,6 @@ response.send(homepage.toString('utf8'));
 
 var port = process.env.PORT || 8080;
 app.use(express.static(__dirname));
-app.use(express.static(__dirname + '/bootstrap'));
-app.use(express.static(__dirname + '/font-awesome'));
-app.use(express.static(__dirname + '/bootstrap/js'));
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
